@@ -57,24 +57,22 @@ def sessions(request):
 
 def exam(request):
 
+    str_numbers = [str(i) for i in range(1, 61)]
 
-    if (request.POST.get("start-lesson"))=='' or (request.POST.get("start-lesson"))=='' or (request.POST.get("start-lesson")) =='':
-        messages.error(request, "compleate the fields")
-        return render(request,'eng_w/eng_exam.html')
+    start = request.POST.get("start-lesson", 1)
+    end = request.POST.get("end-lesson", 1)
+    count = request.POST.get("words-count", 5)
 
-    start = int(request.POST.get("start-lesson", 1))
-    end = int(request.POST.get("end-lesson", 1))
-    count = int(request.POST.get("words-count", 5))
-
-    if start < 1 or start > 60:
+    if start not in str_numbers:
         messages.error(request, "Start lesson must be between 1 and 60!")
         return render(request, 'eng_w/eng_exam.html', {
             "start_lesson": start,
             "end_lesson": end,
             "words_count": count
         })
+    start = int(request.POST.get("start-lesson", 1))
     
-    if end < 1 or end > 60:
+    if end not in str_numbers:
         messages.error(request, "End lesson must be between 1 and 60!")
         return render(request, 'eng_w/eng_exam.html', {
             "start_lesson": start,
@@ -82,15 +80,37 @@ def exam(request):
             "words_count": count
             })
     
+    end = int(request.POST.get("end-lesson", 1))
 
     if start>end:
         messages.error(request, "Exam till lesson should be bigger than star lesson!")
         return render(request, 'eng_w/eng_exam.html')
 
-    if count>(end-start)*5:
-        messages.error(request, "we dont have this number of word in this period of lessons!")
-        return render(request, 'eng_w/eng_exam.html')
 
+
+    if not count.isdigit():
+        
+        messages.error(request, "please compleate the fields")
+
+        return render(request, 'eng_w/eng_exam.html')
+    
+    count = int(request.POST.get("words-count", 5))
+
+    if  count >(end-start)*5:
+        messages.error(request, "we donn't have this number of word in this priod of lessons")
+
+        return render(request, 'eng_w/eng_exam.html',{
+            "start_lesson": start,
+            "end_lesson": end,
+            "words_count": count
+        })
+    
+
+   
+    
+    
+
+    
     finall_list=[]
     action = request.POST.get("action")
     if action =="Create":
