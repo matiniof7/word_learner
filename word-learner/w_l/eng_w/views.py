@@ -80,6 +80,7 @@ def exam(request):
             "words_count": count
             })
     
+    
     end = int(request.POST.get("end-lesson", 1))
 
     if start>end:
@@ -96,15 +97,28 @@ def exam(request):
     
     count = int(request.POST.get("words-count", 5))
 
-    if  count >(end-start)*5:
-        messages.error(request, "we donn't have this number of word in this priod of lessons")
-
-        return render(request, 'eng_w/eng_exam.html',{
-            "start_lesson": start,
-            "end_lesson": end,
-            "words_count": count
-        })
     
+
+    if  count >(end-start)*5 :
+        if end!=start :
+            
+
+            messages.error(request, "we donn't have this number of word in this priod of lessons")
+
+            return render(request, 'eng_w/eng_exam.html',{
+                "start_lesson": start,
+                "end_lesson": end,
+                "words_count": count
+            })
+        elif count>5:
+            messages.error(request, "we donn't have this number of word in this priod of lessons")
+
+            return render(request, 'eng_w/eng_exam.html',{
+                "start_lesson": start,
+                "end_lesson": end,
+                "words_count": count
+            })
+
 
    
     
