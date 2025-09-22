@@ -57,6 +57,11 @@ def sessions(request):
 
 def exam(request):
 
+
+    if (request.POST.get("start-lesson"))=='' or (request.POST.get("start-lesson"))=='' or (request.POST.get("start-lesson")) =='':
+        messages.error(request, "compleate the fields")
+        return render(request,'eng_w/eng_exam.html')
+
     start = int(request.POST.get("start-lesson", 1))
     end = int(request.POST.get("end-lesson", 1))
     count = int(request.POST.get("words-count", 5))
