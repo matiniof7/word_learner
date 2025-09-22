@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Word Learner</title>
-  <link rel="stylesheet" href="{% static 'home/style.css' %}?v=1">
-
+  <title>Word Learner - Choose Session</title>
+  <link rel="stylesheet" href="{% static 'eng_w/style.css' %}?v=1">
+</head>
 <body>
 
   <header>
@@ -16,7 +16,7 @@
   <nav>
     <ul class="menu">
       <li><a href="{% url 'home' %}">Home</a></li>
-      <li><a href="{%url 'eng'%}">English</a></li>
+      <li><a href="{% url 'eng' %}">English</a></li>
       <li><a href="#">Arabic</a></li>
       <li><a href="#">French</a></li>
       <li><a href="#">Germany</a></li>
@@ -27,8 +27,13 @@
 
   <main>
     <section class="hero">
-      <h2>Welcome to Word Learner!</h2>
-      <p>Learn new words in multiple languages every day.</p>
+      <h2>Choose Your Learning Mode</h2>
+      <p>Select either a session or an exam to start learning:</p>
+
+      <div class="button-container">
+        <a href="{%url 'eng_s'%}" class="btn">Start Session</a>
+        <a href="{%url 'eng_e'%}" class="btn">Start Exam</a>
+      </div>
     </section>
   </main>
 

@@ -1,0 +1,599 @@
+Apple – سیب
+
+Book – کتاب
+
+Cat – گربه
+
+Dog – سگ
+
+Elephant – فیل
+
+Flower – گل
+
+Girl – دختر
+
+House – خانه
+
+Ice – یخ
+
+Juice – آبمیوه
+
+Key – کلید
+
+Lion – شیر
+
+Moon – ماه
+
+Night – شب
+
+Orange – پرتقال
+
+Pen – خودکار
+
+Queen – ملکه
+
+Rain – باران
+
+Sun – خورشید
+
+Tree – درخت
+
+Umbrella – چتر
+
+Van – ون (ماشین)
+
+Water – آب
+
+Xylophone – زیلوفون
+
+Yellow – زرد
+
+Zebra – گورخر
+
+Air – هوا
+
+Ball – توپ
+
+Chair – صندلی
+
+Door – در
+
+Ear – گوش
+
+Fire – آتش
+
+Garden – باغ
+
+Hat – کلاه
+
+Island – جزیره
+
+Jacket – ژاکت
+
+Kite – بادبادک
+
+Leaf – برگ
+
+Mountain – کوه
+
+Nose – بینی
+
+Ocean – اقیانوس
+
+Paper – کاغذ
+
+River – رودخانه
+
+Star – ستاره
+
+Table – میز
+
+Village – روستا
+
+Window – پنجره
+
+Box – جعبه
+
+Friend – دوست
+
+Teacher – معلم
+
+School – مدرسه
+
+Chair – صندلی
+
+Desk – میز تحریر
+
+Bookstore – کتابفروشی
+
+Market – بازار
+
+Car – ماشین
+
+Bicycle – دوچرخه
+
+Train – قطار
+
+Plane – هواپیما
+
+Ship – کشتی
+
+Road – جاده
+
+Bridge – پل
+
+City – شهر
+
+Village – روستا
+
+Country – کشور
+
+Flag – پرچم
+
+Music – موسیقی
+
+Song – آهنگ
+
+Dance – رقص
+
+Movie – فیلم
+
+Theater – تئاتر
+
+Hospital – بیمارستان
+
+Doctor – دکتر
+
+Nurse – پرستار
+
+Medicine – دارو
+
+Phone – تلفن
+
+Computer – کامپیوتر
+
+Internet – اینترنت
+
+Email – ایمیل
+
+Camera – دوربین
+
+Photo – عکس
+
+Picture – تصویر
+
+Bag – کیف
+
+Shoe – کفش
+
+Shirt – پیراهن
+
+Pants – شلوار
+
+Coat – کت
+
+Dress – لباس
+
+Hat – کلاه
+
+Glass – لیوان
+
+Cup – فنجان
+
+Plate – بشقاب
+
+Knife – چاقو
+
+Fork – چنگال
+
+Spoon – قاشق
+
+Food – غذا
+
+Bread – نان
+
+Rice – برنج
+
+Meat – گوشت
+
+Fish – ماهی
+
+Egg – تخم مرغ
+
+Milk – شیر
+
+Cheese – پنیر
+
+Butter – کره
+
+Salt – نمک
+
+Sugar – شکر
+
+Pepper – فلفل
+
+Tomato – گوجه فرنگی
+
+Potato – سیب زمینی
+
+Onion – پیاز
+
+Garlic – سیر
+
+Carrot – هویج
+
+Cucumber – خیار
+
+Lettuce – کاهو
+
+Lemon – لیمو
+
+Banana – موز
+
+Strawberry – توت فرنگی
+
+Orange – پرتقال
+
+Grape – انگور
+
+Watermelon – هندوانه
+
+Peach – هلو
+
+Cherry – گیلاس
+
+Pear – گلابی
+
+Pineapple – آناناس
+
+Mango – انبه
+
+Coconut – نارگیل
+
+Apricot – زردآلو
+
+Plum – آلو
+
+Fig – انجیر
+
+Date – خرما
+
+Nuts – آجیل
+
+Almond – بادام
+
+Walnut – گردو
+
+Cashew – بادام هندی
+
+Peanut – بادام زمینی
+
+Rice – برنج
+
+Pasta – پاستا
+
+Noodles – رشته
+
+Soup – سوپ
+
+Salad – سالاد
+
+Sandwich – ساندویچ
+
+Hamburger – همبرگر
+
+Pizza – پیتزا
+
+Cake – کیک
+
+Cookie – کوکی
+
+Chocolate – شکلات
+
+Ice cream – بستنی
+
+Juice – آبمیوه
+
+Tea – چای
+
+Coffee – قهوه
+
+Water – آب
+
+Soda – نوشابه
+
+Beer – آبجو
+
+Wine – شراب
+
+Breakfast – صبحانه
+
+Lunch – ناهار
+
+Dinner – شام
+
+Snack – میان وعده
+
+Fruit – میوه
+
+Vegetable – سبزیجات
+
+Animal – حیوان
+
+Dog – سگ
+
+Cat – گربه
+
+Bird – پرنده
+
+Fish – ماهی
+
+Cow – گاو
+
+Horse – اسب
+
+Sheep – گوسفند
+
+Goat – بز
+
+Pig – خوک
+
+Lion – شیر
+
+Tiger – ببر
+
+Elephant – فیل
+
+Monkey – میمون
+
+Bear – خرس
+
+Wolf – گرگ
+
+Fox – روباه
+
+Deer – گوزن
+
+Rabbit – خرگوش
+
+Mouse – موش
+
+Rat – موش صحرایی
+
+Snake – مار
+
+Frog – قورباغه
+
+Turtle – لاک پشت
+
+Whale – نهنگ
+
+Dolphin – دلفین
+
+Shark – کوسه
+
+Crab – خرچنگ
+
+Lobster – لابستر
+
+Octopus – هشت پا
+
+Spider – عنکبوت
+
+Ant – مورچه
+
+Bee – زنبور
+
+Butterfly – پروانه
+
+Fly – مگس
+
+Mosquito – پشه
+
+Tree – درخت
+
+Flower – گل
+
+Grass – چمن
+
+Leaf – برگ
+
+Forest – جنگل
+
+Jungle – جنگل انبوه
+
+Mountain – کوه
+
+Hill – تپه
+
+River – رودخانه
+
+Lake – دریاچه
+
+Sea – دریا
+
+Ocean – اقیانوس
+
+Beach – ساحل
+
+Sand – شن
+
+Rock – سنگ
+
+Stone – سنگ
+
+Sky – آسمان
+
+Cloud – ابر
+
+Rain – باران
+
+Snow – برف
+
+Wind – باد
+
+Storm – طوفان
+
+Sun – خورشید
+
+Moon – ماه
+
+Star – ستاره
+
+Planet – سیاره
+
+Earth – زمین
+
+Fire – آتش
+
+Water – آب
+
+Air – هوا
+
+Food – غذا
+
+Drink – نوشیدنی
+
+Breakfast – صبحانه
+
+Lunch – ناهار
+
+Dinner – شام
+
+Snack – میان وعده
+
+Sugar – شکر
+
+Salt – نمک
+
+Pepper – فلفل
+
+Oil – روغن
+
+Butter – کره
+
+Cheese – پنیر
+
+Meat – گوشت
+
+Fish – ماهی
+
+Chicken – مرغ
+
+Egg – تخم مرغ
+
+Bread – نان
+
+Rice – برنج
+
+Noodles – رشته
+
+Pasta – پاستا
+
+Vegetable – سبزیجات
+
+Fruit – میوه
+
+Apple – سیب
+
+Banana – موز
+
+Orange – پرتقال
+
+Lemon – لیمو
+
+Grape – انگور
+
+Mango – انبه
+
+Pineapple – آناناس
+
+Strawberry – توت فرنگی
+
+Cherry – گیلاس
+
+Peach – هلو
+
+Watermelon – هندوانه
+
+Carrot – هویج
+
+Potato – سیب زمینی
+
+Tomato – گوجه فرنگی
+
+Onion – پیاز
+
+Garlic – سیر
+
+Lettuce – کاهو
+
+Cucumber – خیار
+
+Pepper – فلفل
+
+Corn – ذرت
+
+Pea – نخود فرنگی
+
+Bean – لوبیا
+
+Mushroom – قارچ
+
+Sugarcane – نیشکر
+
+Honey – عسل
+
+Tea – چای
+
+Coffee – قهوه
+
+Juice – آبمیوه
+
+Water – آب
+
+Soda – نوشابه
+
+Beer – آبجو
+
+Wine – شراب
+
+Milk – شیر
+
+Yogurt – ماست
+
+Cheese – پنیر
+
+Butter – کره
+
+Cake – کیک
+
+Cookie – کوکی
+
+Chocolate – شکلات
+
+Ice cream – بستنی
+
+Pie – پای
+
+Sandwich – ساندویچ
+
+Hamburger – همبرگر
+
+Pizza – پیتزا
+
+Rice – برنج
+
+Noodles – رشته
+
+Soup – سوپ
+
+Salad – سالاد
+
+Meat – گوشت
+
+Chicken – مرغ
+
+Fish – ماهی
+
+Fruit – میوه

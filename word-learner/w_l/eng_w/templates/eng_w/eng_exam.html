@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Learner - Exam</title>
+  <link rel="stylesheet" href="{% static 'eng_w/eng_exam.css' %}?v=1">
+</head>
+<body>
+
+<header>
+  <h1>Word Learner</h1>
+</header>
+
+<nav>
+  <ul class="menu">
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{% url 'eng' %}">English</a></li>
+      <li><a href="#">Arabic</a></li>
+      <li><a href="#">French</a></li>
+      <li><a href="#">Germany</a></li>
+      <li><a href="#">Russia</a></li>
+      <li><a href="#">Japanese</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section class="hero exam-hero">
+    <h2>Create Exam</h2>
+
+    <form method="POST" action="{% url 'eng_e' %}">
+      {% csrf_token %}
+      <div class="exam-controls">
+        <div class="control-row">
+          <label for="start-lesson">Exam from lesson</label>
+          <input id="start-lesson" name="start-lesson" type="text" value="{{ start_lesson }}">        </div>
+        <div class="control-row">
+          <label for="end-lesson">Exam till lesson</label>
+          <input id="end-lesson" name="end-lesson" type="text" value="{{ end_lesson }}">        </div>
+        <div class="control-row">
+          <label for="words-count">How many words</label>
+          <input id="words-count" name="words-count" type="text" value="{{ words_count }}">        </div>
+        <div class="control-row">
+          <button type="submit" name="action" value="Create" class="btn">Create Exam</button>
+        </div>
+      </div>
+    </form>
+
+    {% if finall_list %}
+    <div class="exam-container" id="exam-container">
+      {% for item in finall_list %}
+      <div class="exam-item">
+        <span class="word">{{ item.w }}</span>
+        <input type="text" class="answer-input" placeholder="Your answer">
+        <span class="translation hidden">{{ item.t }}</span>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="button-container">
+      <button id="check-answers" class="btn">Check Answers</button>
+    </div>
+    {% endif %}
+
+  </section>
+</main>
+
+
+{% if messages %}
+  {% for message in messages %}
+    <div class="warning">{{ message }}</div>
+  {% endfor %}
+{% endif %}
+
+
+
+
+<script src="{% static 'eng_w/eng_exam.js' %}"></script>
+</body>
+</html>

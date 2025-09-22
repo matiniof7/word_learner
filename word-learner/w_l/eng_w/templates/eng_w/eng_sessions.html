@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Learner - Session</title>
+  <link rel="stylesheet" href="{% static 'eng_w/session.css' %}?v=1">
+</head>
+
+<body>
+
+<header>
+  <h1>Word Learner</h1>
+</header>
+
+<nav>
+  <ul class="menu">
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{% url 'eng' %}">English</a></li>
+      <li><a href="#">Arabic</a></li>
+      <li><a href="#">French</a></li>
+      <li><a href="#">Germany</a></li>
+      <li><a href="#">Russia</a></li>
+      <li><a href="#">Japanese</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section class="hero">
+
+    <!-- Box 1: Session Control -->
+    <div class="control-box">
+      <h2>Session Control</h2>
+      <form method="POST" action="{% url 'eng_s' %}" class="session-form">
+        {% csrf_token %}
+        <div class="input-group">
+          <input type="text" name="session_number" id="session-number" placeholder="Enter session number" value="{{ session_number }}">
+          <button type="submit" name="action" value="go" class="btn">Go</button>
+        </div>
+        <div class="buttons">
+          <button type="submit" id="prev-session" name="action" value="prev" class="btn">Previous Session</button>
+          <button type="submit" id="next-session" name="action" value="next" class="btn">Next Session</button>
+        </div>
+      </form>
+      <p id="session-label">Current Session: {{ session_number }}</p>
+    </div>
+
+    <!-- Box 2: Word Control -->
+    <div id="word-box">
+  <h3>{{ words_data.w }}</h3>
+  <p>{{ words_data.t }}</p>
+</div>
+
+<form method="POST" action="{% url 'eng_s' %}">
+  {% csrf_token %}
+  <input type="hidden" name="session_number" value="{{ session_number }}">
+  <input type="hidden" name="current_word_index" value="{{ current_word_index }}">
+
+  <div class="buttons">
+    <button type="submit" name="action" value="prev_word" class="btn">Previous Word</button>
+    <button type="submit" name="action" value="next_word" class="btn">Next Word</button>
+  </div>
+</form>
+
+
+  </section>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,268 @@
+/* Reset defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f0f0f5;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 15px 0;
+  background: linear-gradient(90deg, #4CAF50, #2E8B57);
+  color: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+/* Navbar */
+nav {
+  background-color: #333;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav ul.menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+nav ul.menu li {
+  margin: 8px 12px;
+}
+
+nav ul.menu li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 18px;
+  display: block;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+nav ul.menu li a:hover {
+  background-color: #4CAF50;
+  transform: scale(1.05);
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #e6f2ff;
+  margin-top: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.hero h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Exam Controls */
+.exam-controls {
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.control-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+
+.control-row label {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.control-row input {
+  flex: 2;
+  padding: 8px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.warning {
+  color: #f44336;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Selected words box */
+.selected-box {
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.selected-box h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+#selected-list {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Exam Question List */
+.exam-container {
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.exam-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.exam-item .word {
+  font-weight: 600;
+  color: #333;
+  flex: 1;
+  margin-right: 15px;
+}
+
+.exam-item .answer-input {
+  flex: 2;
+  padding: 8px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.exam-item .translation {
+  flex: 1;
+  margin-left: 15px;
+  font-style: italic;
+  color: #666;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Buttons */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 12px 25px;
+  background-color: #4CAF50;
+  color: white;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Answer feedback */
+.correct {
+  border-color: #4CAF50;
+  background-color: #e6ffe6;
+}
+
+.wrong {
+  border-color: #f44336;
+  background-color: #ffe6e6;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav ul.menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul.menu li {
+    margin: 5px 0;
+  }
+
+  .hero h2 {
+    font-size: 20px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .exam-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .exam-item .answer-input {
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .exam-item .translation {
+    margin-left: 0;
+    margin-top: 6px;
+  }
+}
