@@ -1,46 +1,0 @@
-<!DOCTYPE html>
-<html lang="fa">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>امتحان</title>
-  <link rel="stylesheet" href="../css/exam.css">
-</head>
-<body>
-  <!-- منوی همبرگری -->
-  <div class="menu-container">
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-    <ul id="menu" class="menu hidden">
-      <li><a href="main.html">🏠خانه</a></li>
-      <li><a href="sessions.html">📚 انتخاب جلسه</a></li>
-      <li><a href="exam.html">📝 امتحان</a></li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>📝 تنظیم امتحان</h2>
-
-    <div class="label-row">
-      <span class="farsi">شروع بازه</span>
-      <span class="english">Start Range</span>
-    </div>
-    <input type="text" id="startRange" placeholder="مثلا 1">
-
-    <div class="label-row">
-      <span class="farsi">پایان بازه</span>
-      <span class="english">End Range</span>
-    </div>
-    <input type="text" id="endRange" placeholder="مثلا 50">
-
-    <div class="label-row">
-      <span class="farsi">تعداد کلمات</span>
-      <span class="english">Number of Words</span>
-    </div>
-    <input type="text" id="wordCount" placeholder="مثلا 10">
-
-    <button onclick="startExam()">شروع امتحان</button>
-  </div>
-
-  <script src="../js/exam.js"></script>
-</body>
-</html>

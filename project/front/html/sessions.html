@@ -1,34 +1,0 @@
-<!DOCTYPE html>
-<html lang="fa">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>انتخاب جلسه</title>
-  <link rel="stylesheet" href="../css/session.css">
-</head>
-<body>
-  <!-- منوی همبرگری -->
-  <div class="menu-container">
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-    <ul id="menu" class="menu hidden">
-      <li><a href="main.html">🏠خانه</a></li>
-      <li><a href="sessions.html">📚 انتخاب جلسه</a></li>
-      <li><a href="exam.html">📝 امتحان</a></li>
-    </ul>
-  </div>
-
-  <!-- محتوای اصلی -->
-  <div class="card">
-    <div class="label-row">
-      <span class="farsi">شماره جلسه را وارد کنید</span>
-      <span class="english">Enter the Session</span>
-    </div>
-
-    <input type="text" id="sessionInput" placeholder="مثلا 1" maxlength="2">
-
-    <button onclick="goToSession()">ورود به جلسه</button>
-  </div>
-
-  <script src="../js/session.js"></script>
-</body>
-</html>
